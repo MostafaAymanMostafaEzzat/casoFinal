@@ -21,6 +21,8 @@ export default async function creatSession({ ConfigID }: { ConfigID: string }) {
 
   const { getUser } = getKindeServerSession();
   const user = await getUser();
+  console.log(user)
+
   const { finish, material } = configuration;
   console.log('helooo 4')
   if (!user) {
